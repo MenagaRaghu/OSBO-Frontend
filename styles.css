@@ -25,8 +25,8 @@ body {
 .logo{
     font-size: 24px;
     color: #0A8255;
-    width: 150px; /* Adjust to the size you want */
-    height: auto; /* Ensures the aspect ratio is maintained */
+    width: 150px; 
+    height: auto; 
 
 }
 
@@ -112,7 +112,7 @@ body {
 }
 .image-with-background {
     position: relative;
-    display: inline-block; /* Allows the container to size itself based on the image */
+    display: inline-block; 
 }
 
 .image-with-background::before {
@@ -122,21 +122,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f5f5f5; /* Your background color */
-    z-index: -1; /* Send it behind the image */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #f5f5f5; 
+    z-index: -1; 
+    border-radius: 8px; 
 }
 
 
 
 /* Partners Section */
 .logo-container {
-    background-color: #f5f5f5; /* Match your website's background color */
-    border: 1px solid #f5f5f5; /* Optional: Add a border matching the background */
-    padding: 10px; /* Optional: Add some padding around the image */
-    display: inline-block; /* Keep logos inline */
-    border-radius: 8px; /* Optional: Rounded corners for aesthetic */
-}
+    background-color: #f5f5f5; 
+    border: 1px solid #f5f5f5; 
+    padding: 10px; 
+    display: inline-block; 
+    border-radius: 8px; }
 
 .partners {
     text-align: center;
@@ -162,25 +161,25 @@ body {
     position: relative;
 }
 .features-header {
-    background-color: white; /* White background for the strip */
-    padding: 15px 0; /* Padding for the strip's height */
-    width: 100%; /* Full width */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    background-color: white; 
+    padding: 15px 0; 
+    width: 100%; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
     position: relative;
-    z-index: 1; /* Ensures it sits above the other content */
+    z-index: 1; 
 }
 
 .features h2 {
     font-size: 2rem;
     color: #046c62;
-    margin: 0; /* Space between the heading and the cards */
+    margin: 0; 
 }
 
 /* Container for the cards */
 .features-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    gap: 40px; /* Space between boxes */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
     width: 500px
     lenght: 500px
     justify-content: center;
@@ -220,11 +219,11 @@ body {
 .highlight-text {
     font-size: 1.2rem;
     color: #fff;
-    background-color: #046c62; /* Green background */
-    padding: 3px 6px; /* Padding tightly around the text */
+    background-color: #046c62; 
+    padding: 3px 6px; 
     border-radius: 5px;
     margin-bottom: 10px;
-    display: inline-block; /* Wraps around the text only */
+    display: inline-block; 
 }
 
 /* Image aligned on the right */
@@ -250,7 +249,7 @@ body {
 /* Media query to make it responsive */
 @media (max-width: 768px) {
     .features-container {
-        grid-template-columns: 1fr; /* Change to one column layout on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
@@ -262,9 +261,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #e6ebec; /* Light grey background */
+    background-color: #e6ebec; 
     border-radius: 20px;
-    margin: 80px; /* Increased margin for a more compact card */
+    margin: 80px; 
 }
 /* Content area (left) */
 .cta-content {
@@ -272,7 +271,7 @@ body {
 }
 .cta-content h2 {
     font-size: 28px;
-    color: #046c62; /* Dark green color */
+    color: #046c62; 
     margin-bottom: 15px;
 }
 .cta-content p {
@@ -284,16 +283,16 @@ body {
 .cta-button {
     padding: 15px 30px;
     font-size: 16px;
-    background-color: #046c62; /* Green background */
+    background-color: #046c62; 
     color: white;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-    background-color: #02b77a; /* Lighter green on hover */
+    background-color: #02b77a; 
 }
 /* Graphics area (right) */
 .cta-graphics {
@@ -418,23 +417,23 @@ body {
 /* Testimonials Section */
 #testimonials {
     padding: 50px 0;
-    background-color: #f9f9f9; /* Light background for the section */
+    background-color: #f9f9f9; 
 }
 
 /* Header strip for the testimonials */
 .header-strip {
-    background-color: #ffffff; /* White background for the header */
-    padding: 10px 0; /* Reduced padding for a smaller header */
+    background-color: #ffffff; 
+    padding: 10px 0; 
     text-align: center;
-    margin-bottom: 30px; /* Increased margin for more gap between header and boxes */
+    margin-bottom: 30px; 
 }
 
 /* Title style */
 .testimonials-title {
-    font-size: 2rem; /* Reduced font size to match other headers */
+    font-size: 2rem; 
     font-weight: bold;
-    color: #107a70; /* Green title color */
-    margin: 0; /* No margin */
+    color: #107a70; 
+    margin: 0; 
 }
 
 /* Container for the rounded white rectangle that wraps the testimonials */
@@ -442,29 +441,29 @@ body {
     background-color: white;
     border-radius: 20px;
     padding: 40px;
-    width: 80%; /* Adjust this to change the width of the white container */
-    margin: 20px auto; /* Center the container */
+    width: 80%; 
+    margin: 20px auto; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Container holding all the testimonials */
 .testimonials-container {
     display: flex;
-    justify-content: space-between; /* Align items in a single row */
+    justify-content: space-between; 
 }
 
 /* Testimonial box styling */
 .testimonial-box {
-    background-color: #006d5b; /* Dark green background for the boxes */
+    background-color: #006d5b; 
     border-radius: 15px;
-    color: white; /* Text color in white */
+    color: white; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Adjusted padding for a more compact look */
-    width: 30%; /* Width of the boxes */
+    padding: 20px; 
+    width: 30%; 
     position: relative;
     overflow: hidden;
     text-align: left;
-    min-height: 120px; /* Ensuring all boxes are of the same height */
+    min-height: 120px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -474,39 +473,39 @@ body {
 
 /* Testimonial text inside the box */
 .testimonial-text {
-    font-size: 0.9rem; /* Reduced font size for fitting content */
-    color: white; /* Keep text white to contrast the dark background */
-    margin-bottom: 10px; /* Adjusted margin for better spacing */
+    font-size: 0.9rem; 
+    color: white; 
+    margin-bottom: 10px; 
 }
 
 /* Author's name and title styling */
 .testimonial-author {
-    font-size: 0.8rem; /* Slightly reduced font size */
+    font-size: 0.8rem; 
     font-weight: bold;
-    color: #e0f2f1; /* Light green color for the author text */
+    color: #e0f2f1; 
     text-align: right;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .testimonials-container {
-        flex-direction: column; /* Stack vertically on smaller screens */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .testimonial-box {
-        width: 90%; /* Responsive width adjustment for smaller screens */
-        margin-bottom: 20px; /* Spacing between stacked boxes */
+        width: 90%; 
+        margin-bottom: 20px; 
     }
 }
 
-/* Frontend Creation: Styling for Footer Section */
+/* Styling for Footer Section */
 
-/* Frontend Creation: Styling for Footer Section */
+
 footer {
   background-color: #006d5b;
   color: white;
-  padding: 40px 40px 40px; /* Increase the top padding */
+  padding: 40px 40px 40px; 
   font-family: Arial, sans-serif;
   border-top-left-radius: 50px;  
   border-top-right-radius: 50px; 
@@ -514,19 +513,18 @@ footer {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Adjusting column layout */
+  grid-template-columns: 1fr 1fr; 
   gap: 20px;
   align-items: around;
 }
 
-/* Logo and Contact Us on the left */
 .footer-logo, .footer-contact {
-  grid-column: 1; /* Keeping logo and contact on the left */
+  grid-column: 1; 
 }
 
 .footer-logo img {
-  width: 100px; /* Adjust logo size as needed */
-  margin-bottom: 20px; /* Adjust margin to separate from contact */
+  width: 100px; 
+  margin-bottom: 20px; 
 }
 
 .footer-contact {
@@ -540,36 +538,36 @@ footer {
 /* Horizontal Navigation on the top right */
 /* Footer Navigation Styling */
 .footer-nav {
-  display: flex;                       /* Use flexbox layout */
-  flex-direction: row;                /* Arrange items in a row */
-  justify-content: end;        /* Align items to the start */
-  align-items: center;                /* Center items vertically */
-  margin-bottom: 20px;                /* Space below the navigation */
+  display: flex;                       
+  flex-direction: row;                
+  justify-content: end;        
+  align-items: center;                
+  margin-bottom: 20px;                
 }
 
 /* Navigation Links Styling */
 .footer-nav a {
-  color: white;                       /* White text color */
-  text-decoration: none;              /* Remove underline from links */
-  margin-right: 30px;                 /* Space between links */
-  font-size: 16px;                    /* Font size for links */
-  transition: color 0.3s;            /* Smooth transition for hover effect */
+  color: white;                       
+  text-decoration: none;              
+  margin-right: 30px;                 
+  font-size: 16px;                    
+  transition: color 0.3s;            
 }
 
 .footer-nav a:hover {
-  color: #00bfa5;                     /* Change color on hover */
+  color: #00bfa5;                     
 }
 
 /* Social Media Icons Styling */
 .footer-nav img {
-  width: 25px;                       /* Width of social media icons */
-  height: 25px;                      /* Height of social media icons */
-  margin-left: 10px;                 /* Space to the left of icons */
-  transition: transform 0.3s;        /* Smooth transition for hover effect */
+  width: 25px;                       
+  height: 25px;                      
+  margin-left: 10px;                 
+  transition: transform 0.3s;        
 }
 
 .footer-nav a:hover img {
-  transform: scale(1.1);             /* Slightly enlarge icon on hover */
+  transform: scale(1.1);             
 }
 
 
@@ -578,20 +576,20 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end; /* Align items to the start */
-  grid-column: 2; /* Positioned in the right section */
+  justify-content: flex-end; 
+  grid-column: 2; 
 }
 
 /* Email input styling */
 .footer-subscribe input {
-  padding: 15px;                     /* Increase padding for more height */
-  margin-right: 10px;                /* Space between input and button */
-  border: 2px solid white;                      /* Remove border */
-  border-radius: 3px;               /* Rounded corners */
-  flex: 2;                           /* Adjust flex to make it wider */
-  min-width: 200px;                  /* Set a minimum width */
-  height: 45px;                      /* Set a specific height */
-  background-color: transparent;      /* Make the background transparent */
+  padding: 15px;                     
+  margin-right: 10px;                
+  border: 2px solid white;           
+  border-radius: 3px;               
+  flex: 2;                          
+  min-width: 200px;                 
+  height: 45px;                     
+  background-color: transparent;    
   color: solid white;
   font- size: 16px solid white; 
 }
@@ -599,14 +597,14 @@ footer {
 
 /* Subscribe button styling */
 .footer-subscribe button {
-  padding: 15px 20px;                /* Increase padding for more height */
-  background-color: #9EFCF4;         /* Button background color */
-  border: none;                      /* Remove border */
-  border-radius: 3px;               /* Rounded corners */
-  color: Black;                      /* Text color */
-  cursor: pointer;                   /* Pointer cursor on hover */
-  flex: 1;                           /* Adjust flex to control size relative to input */
-  height: 45px;                      /* Set a specific height */
+  padding: 15px 20px;                
+  background-color: #9EFCF4;         
+  border: none;                      
+  border-radius: 3px;               
+  color: Black;                     
+  cursor: pointer;                  
+  flex: 1;                          
+  height: 45px;                     
 }
 
 .footer-subscribe button:hover {
@@ -632,18 +630,18 @@ footer {
   .footer-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items */
+    align-items: center; 
   }
 
   .footer-nav {
-    justify-content: center; /* Center navigation */
+    justify-content: center; 
   }
 
   .footer-social {
-    justify-content: center; /* Center social media icons */
+    justify-content: center; 
   }
 
   .footer-bottom {
-    text-align: center; /* Center footer bottom text */
+    text-align: center; 
   }
 }
