@@ -1,0 +1,649 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo{
+    font-size: 24px;
+    color: #0A8255;
+    width: 150px; /* Adjust to the size you want */
+    height: auto; /* Ensures the aspect ratio is maintained */
+
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .register-btn {
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.register-btn {
+    background-color: #0A8255;
+    color: white;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.main .content {
+    max-width: 50%;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+    color: #0A8255;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #0A8255;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Image Section */
+.main .image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 50px;
+    align-self: flex-start;
+}
+.image-with-background {
+    position: relative;
+    display: inline-block; /* Allows the container to size itself based on the image */
+}
+
+.image-with-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5f5f5; /* Your background color */
+    z-index: -1; /* Send it behind the image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+
+/* Partners Section */
+.logo-container {
+    background-color: #f5f5f5; /* Match your website's background color */
+    border: 1px solid #f5f5f5; /* Optional: Add a border matching the background */
+    padding: 10px; /* Optional: Add some padding around the image */
+    display: inline-block; /* Keep logos inline */
+    border-radius: 8px; /* Optional: Rounded corners for aesthetic */
+}
+
+.partners {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.partners ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners li img {
+    max-width: 100px;
+}
+
+/*Second Page*/
+
+.features {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.features-header {
+    background-color: white; /* White background for the strip */
+    padding: 15px 0; /* Padding for the strip's height */
+    width: 100%; /* Full width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    position: relative;
+    z-index: 1; /* Ensures it sits above the other content */
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #046c62;
+    margin: 0; /* Space between the heading and the cards */
+}
+
+/* Container for the cards */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 40px; /* Space between boxes */
+    width: 500px
+    lenght: 500px
+    justify-content: center;
+    padding: 0 300px;
+}
+
+/* Individual feature cards */
+.feature-card {
+    background-color: f5f5f5;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 12px 16px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Flexbox for aligning text and image */
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #046c62; /* Green background */
+    padding: 3px 6px; /* Padding tightly around the text */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block; /* Wraps around the text only */
+}
+
+/* Image aligned on the right */
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #046c62;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+    color: #02B77A;
+}
+
+/* Media query to make it responsive */
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr; /* Change to one column layout on smaller screens */
+    }
+}
+
+/* Third Page*/ 
+
+/* General styling for the call-to-action section */
+.call-to-action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #e6ebec; /* Light grey background */
+    border-radius: 20px;
+    margin: 80px; /* Increased margin for a more compact card */
+}
+/* Content area (left) */
+.cta-content {
+    max-width: 50%;
+}
+.cta-content h2 {
+    font-size: 28px;
+    color: #046c62; /* Dark green color */
+    margin-bottom: 15px;
+}
+.cta-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+}
+/* Button styling */
+.cta-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #046c62; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #02b77a; /* Lighter green on hover */
+}
+/* Graphics area (right) */
+.cta-graphics {
+    max-width: 40%;
+    text-align: right;
+}
+.cta-graphics img {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .call-to-action-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cta-content {
+        max-width: 100%;
+    }
+    .cta-graphics {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/*Fourth Page*/
+
+/* Styling for the overall team section */
+.team-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f7f9;
+}
+
+.team-section h2 {
+    color: #046c62;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Container for team cards */
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Team card styling */
+.team-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* LinkedIn icon styling */
+.linkedin-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.linkedin-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* See all team button */
+.see-all-team {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 14px;
+    color: #046c62;
+    background-color: #e6ebec;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.see-all-team:hover {
+    background-color: #d0d8db;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        max-width: 100%;
+    }
+}
+
+
+/*Fifth Page*/
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+/* Header strip for the testimonials */
+.header-strip {
+    background-color: #ffffff; /* White background for the header */
+    padding: 10px 0; /* Reduced padding for a smaller header */
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for more gap between header and boxes */
+}
+
+/* Title style */
+.testimonials-title {
+    font-size: 2rem; /* Reduced font size to match other headers */
+    font-weight: bold;
+    color: #107a70; /* Green title color */
+    margin: 0; /* No margin */
+}
+
+/* Container for the rounded white rectangle that wraps the testimonials */
+.testimonials-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 80%; /* Adjust this to change the width of the white container */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Container holding all the testimonials */
+.testimonials-container {
+    display: flex;
+    justify-content: space-between; /* Align items in a single row */
+}
+
+/* Testimonial box styling */
+.testimonial-box {
+    background-color: #006d5b; /* Dark green background for the boxes */
+    border-radius: 15px;
+    color: white; /* Text color in white */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adjusted padding for a more compact look */
+    width: 30%; /* Width of the boxes */
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    min-height: 120px; /* Ensuring all boxes are of the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Testimonial text inside the box */
+.testimonial-text {
+    font-size: 0.9rem; /* Reduced font size for fitting content */
+    color: white; /* Keep text white to contrast the dark background */
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+/* Author's name and title styling */
+.testimonial-author {
+    font-size: 0.8rem; /* Slightly reduced font size */
+    font-weight: bold;
+    color: #e0f2f1; /* Light green color for the author text */
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .testimonial-box {
+        width: 90%; /* Responsive width adjustment for smaller screens */
+        margin-bottom: 20px; /* Spacing between stacked boxes */
+    }
+}
+
+/* Frontend Creation: Styling for Footer Section */
+
+/* Frontend Creation: Styling for Footer Section */
+footer {
+  background-color: #006d5b;
+  color: white;
+  padding: 40px 40px 40px; /* Increase the top padding */
+  font-family: Arial, sans-serif;
+  border-top-left-radius: 50px;  
+  border-top-right-radius: 50px; 
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjusting column layout */
+  gap: 20px;
+  align-items: around;
+}
+
+/* Logo and Contact Us on the left */
+.footer-logo, .footer-contact {
+  grid-column: 1; /* Keeping logo and contact on the left */
+}
+
+.footer-logo img {
+  width: 100px; /* Adjust logo size as needed */
+  margin-bottom: 20px; /* Adjust margin to separate from contact */
+}
+
+.footer-contact {
+  margin-top: 5px;
+}
+
+.footer-contact h3, .footer-contact p {
+  margin: 5px 0;
+}
+
+/* Horizontal Navigation on the top right */
+/* Footer Navigation Styling */
+.footer-nav {
+  display: flex;                       /* Use flexbox layout */
+  flex-direction: row;                /* Arrange items in a row */
+  justify-content: end;        /* Align items to the start */
+  align-items: center;                /* Center items vertically */
+  margin-bottom: 20px;                /* Space below the navigation */
+}
+
+/* Navigation Links Styling */
+.footer-nav a {
+  color: white;                       /* White text color */
+  text-decoration: none;              /* Remove underline from links */
+  margin-right: 30px;                 /* Space between links */
+  font-size: 16px;                    /* Font size for links */
+  transition: color 0.3s;            /* Smooth transition for hover effect */
+}
+
+.footer-nav a:hover {
+  color: #00bfa5;                     /* Change color on hover */
+}
+
+/* Social Media Icons Styling */
+.footer-nav img {
+  width: 25px;                       /* Width of social media icons */
+  height: 25px;                      /* Height of social media icons */
+  margin-left: 10px;                 /* Space to the left of icons */
+  transition: transform 0.3s;        /* Smooth transition for hover effect */
+}
+
+.footer-nav a:hover img {
+  transform: scale(1.1);             /* Slightly enlarge icon on hover */
+}
+
+
+/* Email subscription box centered in the right section */
+.footer-subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the start */
+  grid-column: 2; /* Positioned in the right section */
+}
+
+/* Email input styling */
+.footer-subscribe input {
+  padding: 15px;                     /* Increase padding for more height */
+  margin-right: 10px;                /* Space between input and button */
+  border: 2px solid white;                      /* Remove border */
+  border-radius: 3px;               /* Rounded corners */
+  flex: 2;                           /* Adjust flex to make it wider */
+  min-width: 200px;                  /* Set a minimum width */
+  height: 45px;                      /* Set a specific height */
+  background-color: transparent;      /* Make the background transparent */
+  color: solid white;
+  font- size: 16px solid white; 
+}
+
+
+/* Subscribe button styling */
+.footer-subscribe button {
+  padding: 15px 20px;                /* Increase padding for more height */
+  background-color: #9EFCF4;         /* Button background color */
+  border: none;                      /* Remove border */
+  border-radius: 3px;               /* Rounded corners */
+  color: Black;                      /* Text color */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  flex: 1;                           /* Adjust flex to control size relative to input */
+  height: 45px;                      /* Set a specific height */
+}
+
+.footer-subscribe button:hover {
+  background-color: #009688;
+}
+
+/* Divider line between content and footer bottom */
+.divider {
+  grid-column: span 2;
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+/* Footer bottom content */
+.footer-bottom {
+  grid-column: 1;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+  }
+
+  .footer-nav {
+    justify-content: center; /* Center navigation */
+  }
+
+  .footer-social {
+    justify-content: center; /* Center social media icons */
+  }
+
+  .footer-bottom {
+    text-align: center; /* Center footer bottom text */
+  }
+}
